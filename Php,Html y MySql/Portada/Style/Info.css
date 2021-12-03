@@ -1,0 +1,36 @@
+#Info {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+
+}
+
+#Info .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.Info-pet {
+    margin: 20px;
+}
+.Info-pet img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 7px solid rgb(0, 0, 0);
+}
+
+@media (min-width:480px) {
+    .Info-pet {
+        width:40%;
+    }
+}
+
+@media (min-width:1024px) {
+    .Info-pet {
+        width: auto;
+    }
+}

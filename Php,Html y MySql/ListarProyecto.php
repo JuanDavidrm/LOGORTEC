@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Problema</title>
+</head>
+<body>
+<?php
+
+ $conexion = mysqli_connect("localhost", "root", "1000794573", "proyecto") or die("Problemas con la conexión");
+$registros = mysqli_query($conexion, "select Nombres,Correo,contraseña from usuarios") or die("Problemas en el select:" . mysqli_error($conexion));
+while ($reg = mysqli_fetch_array($registros)) {
+        echo "Nombres: " . $reg['Nombres'] . "<br>";
+        echo "Correo: " . $reg['Correo'] . "<br>";
+        echo "codigo: " . $reg['contraseña'] . "<br>";
+    }
+    mysqli_close($conexion);
+    
+?>   
+</body>
+</html>

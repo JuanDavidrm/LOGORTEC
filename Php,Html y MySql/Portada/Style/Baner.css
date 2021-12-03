@@ -1,0 +1,72 @@
+#Baner {
+    margin-top: 50px;
+    position: relative;
+}
+#Baner img {
+    width: 100%;
+    height: 100%;
+}
+#Baner .contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color:white;
+
+}
+#Baner h2{
+    font-size: 28px;
+
+}
+
+#Baner a {
+    display: block;
+    width: 100px;
+    color: white; 
+    text-decoration: none;
+    padding: 10px;
+    border: 3px solid white;
+
+}
+
+#Baner a:hover {
+    background: rgba(51,51,51,0.5);
+    
+}
+
+#Bienvenidos {
+    text-align: center;
+    
+}
+
+@media (min-width:480px) {
+    #Baner h2 {
+        font-size: 40px;
+        
+    }
+    #Baner a {
+        margin-top: 25px;
+    }
+    
+}
+
+@media (min-width:768px) {
+    #Baner {
+        height: 300;
+        overflow: hidden;
+    }
+    #Baner img {
+        height: auto;
+        margin-top: -100px;
+    }
+
+}
+
+@media (min-width:1024px) {
+   
+    #Baner img {
+     
+        margin-top: -200px;
+    }
+
+}
